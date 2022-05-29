@@ -21,8 +21,8 @@ mencari standar deviasi menggunakan fungsi `sd` dan variabel `selisihdata` yang 
 standar_deviasi <- sd(selisihdata)
 cat("Standar deviasi: ")
 standar_deviasi
-#hasil = [1] 6.359595
 ```
+- hasil = [1] 6.359595
 <br/>
 
 ### Soal 1b
@@ -42,8 +42,8 @@ df <- n-1 #degree of freedom
 pvalue <- 2*pt(student_t_test*1, df=n-1, lower.tail=FALSE)
 cat ("nilai t(p value): ")
 pvalue
-#hasil = [1] 6.003179e-05
 ```
+- hasil = [1] 6.003179e-05
 <br/>
 
 ### Soal 1c
@@ -58,15 +58,19 @@ t.test(x=oksigen_sebelum, y=oksigen_sesudah,
        alternative = "two.sided",
        paired = FALSE, var.equal = TRUE,
        conf.level = 0.95)
+
+#Dari hasil yang didapatkan, dapat dilihat bahwa tidak pengaruh, karena 95 percent confidence interval nya hasilnya minus, sama dengan hipotesis alternatif
+#-23.035747
+#-9.408698
 ```
 <br/>
 Hasil: <br/>
 
-![hasil_1c](https://user-images.githubusercontent.com/78362238/170874421-a1278d61-60a7-42bd-af9c-ad453f4d7ece.png)
+![hasil_1c](https://user-images.githubusercontent.com/78362238/170881200-b296b7b0-1e97-4208-813b-cda23d15bd4e.png)
 
 <br/>
 
-Dari hasil yang didapatkan, dapat dilihat bahwa tidak pengaruh, karena 95 percent confidence interval nya hasilnya minus
+Dari hasil yang didapatkan, dapat dilihat bahwa tidak pengaruh, karena 95 percent confidence interval nya hasilnya minus, sama dengan hipotesis alternatif
 - -23.035747 
 - -9.408698
 
@@ -128,5 +132,76 @@ kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 2.2e-16, 
 ```r
 #a
 #H0 = Perusahaan dapat memilih saham dari bandung maupun bali, tidak akan ada perbedaan dalam hasilnya, atau dapat dikatakan, hasil yang didapatkan sama.
-#h1 = Perusahaan harus memilih salah satu daerah, karena hasil akan berpengaruh dengan daerah yang dipilih, salah satu akan lebih besar daripada 0
+#H1 = Perusahaan harus memilih salah satu daerah, karena hasil akan berpengaruh dengan daerah yang dipilih, salah satu akan lebih besar daripada 0
 ```
+Hipotesis null dan hipotesis alternatif (h0 & h1):
+- H0 = Perusahaan dapat memilih saham dari bandung maupun bali, tidak akan ada perbedaan dalam hasilnya, atau dapat dikatakan, hasil yang didapatkan sama.
+- H1 = Perusahaan harus memilih salah satu daerah, karena hasil akan berpengaruh dengan daerah yang dipilih, salah satu akan lebih besar daripada 0
+<br/>
+
+### soal 3b
+```r
+#b
+#sampel Statistik
+#Bandung
+n_bandung <- 19
+mean_bandung <- 3.64
+standar_deviasi_bandung <- 1.67
+#Bali
+n_bali <- 27
+mean_bali <- 2.79
+standar_deviasi_bali <- 1.32
+#confidence level
+alpha <- 0.05
+```
+Sampel statistik: <br/>
+- n bandung (jumlah saham) = 19
+- mean bandung = 3.64
+- standar deviasi bandung = 1.67
+- n bali (jumlah saham) = 27
+- mean bali = 2.79
+- standar deviasi bali = 1.32
+- confidence level (alpha) = 0.05
+<br/>
+
+### soal 3c
+menggunakan rumus `pooled t statistic`, sebelumnya harus mencari `pooled standard deviation`, yang merupakan akar dari `pooled variance`
+```r
+#c
+pooled_variance <- (((n_bandung-1)*(standar_deviasi_bandung^2)) + ((n_bali-1)*(standar_deviasi_bali^2))) / (n_bandung + n_bali - 2)
+pooled_standard_deviation <- sqrt(pooled_variance)
+
+pooled_t_statistic <- ((mean_bandung - mean_bali) - (0 - 0))/(pooled_standard_deviation*sqrt((1/n_bandung) + (1/n_bali)))
+pooled_t_statistic
+
+```
+- hasil pooled_t_statistic = [1] 1.926715
+<br/>
+
+### soal 3d
+menggunakan rumus qt dengan parameter `p` sebagai confidence level, `df` sebagai degree of freedom, `lower.tail = FALSE` karena merupakan tes two-tail
+```r
+#d
+t_critical <- qt(p=.05/2, df=2, lower.tail=FALSE)
+t_critical
+```
+- Hasil yang didapatkan: [1] 4.302653
+<br/>
+
+### soal 3e<br/>
+```r
+#e
+#Perusahaan lebih baik memilih Bandung, karena memiliki mean lebih tinggi
+```
+Perusahaan lebih baik memilih Bandung, karena memiliki mean lebih tinggi
+<br/>
+### soal 3f<br/>
+```r
+#f
+#dengan mean yang lebih tinggi, akan mendapatkan hasil saham yang lebih tinggi
+```
+dengan mean yang lebih tinggi, akan mendapatkan hasil saham yang lebih tinggi
+<br/>
+
+## Soal 4<br/>
+## Soal 5<br/>
