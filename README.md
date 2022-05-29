@@ -72,12 +72,52 @@ Dari hasil yang didapatkan, dapat dilihat bahwa ada pengaruh, karena 95 percent 
 
 <br/>
 
+## Soal 2<br/>
+Rumus yang digunakan untuk mengerjakan soal 2:
+```r
+zsum.test(mean.x=23500, sigma.x = 3900, n.x = 100,  
+          alternative = "greater", mu = 0,
+          conf.level = 0.95)
+```
+<br/>
+Hasil: <br/>
 
+![hasil_ztest](https://user-images.githubusercontent.com/78362238/170878078-c330611a-c78b-4f43-a82e-a48725269de7.png)
+<br/>
+
+### soal 2a
+```r
+#a
+#tidak, karena hasil dari interval dengan 95% confidence adalah 22858.51, dan standar deviasi (z value) nya adalah 60.256, sangat jauh dengan yang dideskripsikan di soal
+
+```
+Tidak, karena hasil dari interval dengan 95% confidence adalah 22858.51, dan standar deviasi (z value) nya adalah 60.256, sangat jauh dengan yang dideskripsikan di soal.
+<br/>
+
+### soal 2b
+```r
+#b
+# Output dari One-sample z-test
+# z value menunjukkan standar deviasi, yaitu sebesar 60.256 di dalam z-test ini
+# P-value adalah nilai probabilitas kesalahan yang didapat dari hasil uji statistik, yang memiliki besar 2.2e-16 di dalam z-test ini
+# alternative hypothesis adalah hipotesis yang mengungkapkan hubungan antara dua variabel, yang lebih sering diambil disaat uji hipotesis, di dalam z-test ini, alternative hypotesisnya adalah "true mean is greater than 0" atau mean lebih besar dari 0
+# confidance interval adalah mean dari estimasi plus minus variasi di dalam estimasi tersebut, yaitu sebesar 2285.51 di dalam z-test ini
+# "sample estimates:" adalah estimasi sampel
+# mean of x adalah rata rata dari x, yaitu 23500 di dalam z-test ini
+```
+Output dari one-sample z-test
+- z value menunjukkan standar deviasi, yaitu sebesar 60.256 di dalam z-test ini
+- P-value adalah nilai probabilitas kesalahan yang didapat dari hasil uji statistik, yang memiliki besar 2.2e-16 di dalam z-test ini
+- alternative hypothesis adalah hipotesis yang mengungkapkan hubungan antara dua variabel, yang lebih sering diambil disaat uji hipotesis, di dalam z-test ini, alternative hypotesisnya adalah "true mean is greater than 0" atau mean lebih besar dari 0
+- confidance interval adalah mean dari estimasi plus minus variasi di dalam estimasi tersebut, yaitu sebesar 2285.51 di dalam z-test ini
+- "sample estimates:" adalah estimasi sampel
+- mean of x adalah rata rata dari x, yaitu 23500 di dalam z-test ini
+<br/>
+
+### soal 2c
 ```r
 ```
-```r
-```
-```r
-```
+
+
 ```r
 ```
