@@ -67,8 +67,8 @@ Hasil: <br/>
 <br/>
 
 Dari hasil yang didapatkan, dapat dilihat bahwa ada pengaruh, karena 95 percent confidence interval nya hasilnya minus
-- 23.035747 
-- 9.408698
+- -23.035747 
+- -9.408698
 
 <br/>
 
