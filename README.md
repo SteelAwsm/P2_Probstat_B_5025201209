@@ -66,7 +66,7 @@ Hasil: <br/>
 
 <br/>
 
-Dari hasil yang didapatkan, dapat dilihat bahwa ada pengaruh, karena 95 percent confidence interval nya hasilnya minus
+Dari hasil yang didapatkan, dapat dilihat bahwa tidak pengaruh, karena 95 percent confidence interval nya hasilnya minus
 - -23.035747 
 - -9.408698
 
@@ -117,10 +117,16 @@ Output dari one-sample z-test
 ### soal 2c
 ```r
 #c
-#kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 0.03024, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 0.03024.
+#kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 2.2e-16, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 2.2e-16.
 ```
-Kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 0.03024, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 0.03024
+kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 2.2e-16, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 2.2e-16.
+<br/>
 
 
+## Soal 3<br/>
+### soal 3a
 ```r
+#a
+#H0 = Perusahaan dapat memilih saham dari bandung maupun bali, tidak akan ada perbedaan dalam hasilnya, atau dapat dikatakan, hasil yang didapatkan sama.
+#h1 = Perusahaan harus memilih salah satu daerah, karena hasil akan berpengaruh dengan daerah yang dipilih, salah satu akan lebih besar daripada 0
 ```
