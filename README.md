@@ -60,12 +60,14 @@ t.test(x=oksigen_sebelum, y=oksigen_sesudah,
        conf.level = 0.95)
 ```
 <br/>
-Hasil:<br/>
+Hasil: <br/>
 ![ihasil_1c](https://user-images.githubusercontent.com/78362238/170874065-54be3867-02d2-40f7-8166-0d38cc902f74.png)
 <br/>
+
 Dari hasil yang didapatkan, dapat dilihat bahwa ada pengaruh, karena 95 percent confidence interval nya hasilnya minus
 - 23.035747 
 - 9.408698
+
 <br/>
 
 
