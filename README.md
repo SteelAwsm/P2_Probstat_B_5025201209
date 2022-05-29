@@ -116,7 +116,10 @@ Output dari one-sample z-test
 
 ### soal 2c
 ```r
+#c
+#kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 0.03024, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 0.03024.
 ```
+Kesimpulan dari p-value yang didapatkan adalah, dengan p-value sebesar 0.03024, peluang mendapatkan hasil yang telah diobservasi sangatlah kecil, karena p-value hanya bernilai 0.03024
 
 
 ```r
